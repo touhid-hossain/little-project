@@ -1,0 +1,17 @@
+.form {
+    margin: 80px 0;
+}
+
+.bill_result_area {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.choice_area {
+    margin: 40px 0;
+}
+
+.owner_details {
+    margin: '';
+}
