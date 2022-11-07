@@ -20,17 +20,17 @@
                 <button><a href="Page-01.html">Logout</a></button>
                 <!-- Choose Name and flat No -->
                 <div class="choice_area">
-                    <h2>Your Name :</h2>
-                    <h2>Your Flat Number :</h2>
-                    <h2>Choose your rent month :</h2>
+                    <h1>Select Your Name and flat Number</h1>
+                    <h2>Your Name :<input type="text" name="" value="" id="owner_name"></h2>
+                    <h2>Your Flat Number :<input type="text" name="" value="" id="flat_number"></h2>
+                    <h2>Choose your bill date : <input type="date" name="" id=""></h2>
                 </div>
                 <!-- Flat owner details -->
                 <div class="owner_details">
-                    <h2>Flat owner name: touhid.</h2>
-                    <h2>Flat number: B-5</h2>
-                    <h3>Bill Date : 22/2/2022</h3>
+                    <h2>Flat owner name : <span data-owner-name></span> </h2>
+                    <h2>Flat number : <span data-flat-number></span> </h2>
+                    <h3>Bill Date : <span data-current-date></span></h3>
                 </div>
-
             </div>
             <!-- 2nd part -->
             <!-- Bill details -->
@@ -57,8 +57,8 @@
                                 <td class="">
                                     House Bill
                                 </td>
-                                <td class="">
-                                    $200
+                                <td data-housebill-amount class="">
+                                    <p class="house-bill">200</p>
                                 </td>
                             </tr>
                             <tr class="">
@@ -67,8 +67,8 @@
                                 <td class="">
                                     Service Charge
                                 </td>
-                                <td class="">
-                                    $200
+                                <td data-servicebill-amount class="">
+                                    <p class="service-charge">200</p>    
                                 </td>
                             </tr>
                             <tr class="">
@@ -77,8 +77,8 @@
                                 <td class="">
                                     Water Bill
                                 </td>
-                                <td class="">
-                                    $800
+                                <td data-waterbill-amount class="">
+                                    <p class="water-bill">200</p>
                                 </td>
                             </tr>
                             <tr class="">
@@ -88,7 +88,7 @@
                                     Gas Bill
                                 </td>
                                 <td class="">
-                                    $100
+                                    <input type="text" name="" value="$" id="gas_bill" class="gas-bill">
                                 </td>
                             </tr>
                             <tr class="">
@@ -98,7 +98,7 @@
                                     Electricity Bill
                                 </td>
                                 <td class="">
-                                    $900
+                                    <input type="text" name="" value="$" id="electricity_bill" class="electricity-bill">
                                 </td>
                             </tr>
                         </tbody>
@@ -110,7 +110,7 @@
                         <p class="">TOTAL BILL</p>
                     </div>
                     <div class="">
-                        <p class="">$2000</p>
+                        <p data-total-amount class="total-bill">0</p>
                     </div>
                 </div>
                 <button>Pay Now</button>

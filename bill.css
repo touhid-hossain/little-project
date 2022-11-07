@@ -13,5 +13,11 @@
 }
 
 .owner_details {
-    margin: '';
+    margin: 80px 0;
+}
+
+input{
+	width: auto;
+	margin: 10px;
+	padding: 5px;
 }
