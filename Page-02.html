@@ -1,125 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NIRBAHO PAGE</title>
-    <link rel="stylesheet" href="bill.css">
+    <link rel="stylesheet" href="bill.css" />
     <script src="main.js" defer></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="bill_form">
-        <div class="container">
-            <!-- 1st part -->
-            <div class="form_header">
-                <h1>Bill Form</h1>
-                <button><a href="Page-01.html">Logout</a></button>
-                <!-- Choose Name and flat No -->
-                <div class="choice_area">
-                    <h1>Select Your Name and flat Number</h1>
-                    <h2>Your Name :<input type="text" name="" value="" id="owner_name"></h2>
-                    <h2>Your Flat Number :<input type="text" name="" value="" id="flat_number"></h2>
-                    <h2>Choose your bill date : <input type="date" name="" id=""></h2>
-                </div>
-                <!-- Flat owner details -->
-                <div class="owner_details">
-                    <h2>Flat owner name : <span data-owner-name></span> </h2>
-                    <h2>Flat number : <span data-flat-number></span> </h2>
-                    <h3>Bill Date : <span data-current-date></span></h3>
-                </div>
-            </div>
-            <!-- 2nd part -->
-            <!-- Bill details -->
-            <div class="form">
-                <div class="">
-                    <table class="">
-                        <thead class="">
-                            <tr>
-                                <th scope="col" class="">
-                                    NO
-                                </th>
-                                <th scope="col" class="">
-                                    DESCRIPTION
-                                </th>
-                                <th scope="col" class="">
-                                    TOTAL
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="">
-                                <td class="">
-                                    1</td>
-                                <td class="">
-                                    House Bill
-                                </td>
-                                <td data-housebill-amount class="">
-                                    <p class="house-bill">200</p>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="">
-                                    1</td>
-                                <td class="">
-                                    Service Charge
-                                </td>
-                                <td data-servicebill-amount class="">
-                                    <p class="service-charge">200</p>    
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="">
-                                    2</td>
-                                <td class="">
-                                    Water Bill
-                                </td>
-                                <td data-waterbill-amount class="">
-                                    <p class="water-bill">200</p>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="">
-                                    3</td>
-                                <td class="">
-                                    Gas Bill
-                                </td>
-                                <td class="">
-                                    <input type="text" name="" value="$" id="gas_bill" class="gas-bill">
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="">
-                                    4</td>
-                                <td class="">
-                                    Electricity Bill
-                                </td>
-                                <td class="">
-                                    <input type="text" name="" value="$" id="electricity_bill" class="electricity-bill">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- Intotal Bill -->
-                <div class="bill_result_area">
-                    <div class="">
-                        <p class="">TOTAL BILL</p>
-                    </div>
-                    <div class="">
-                        <p data-total-amount class="total-bill">0</p>
-                    </div>
-                </div>
-                <button>Pay Now</button>
-            </div>
-            <button>Download PDF</button>
+      <div class="container">
+        <!-- 1st part -->
+        <div class="form_header">
+          <h1>Bill Form</h1>
+          <button><a href="Page-01.html">Logout</a></button>
+          <!-- Choose Name and flat No -->
+          <div class="choice_area">
+            <h1>Select Your Name and flat Number</h1>
+            <h2>
+              Your Name :<input type="text" name="" value="" id="owner_name" />
+            </h2>
+            <h2>
+              Your Flat Number :<input
+                type="text"
+                name=""
+                value=""
+                id="flat_number"
+              />
+            </h2>
+            <h2>Choose your bill date : <input type="date" name="" id="" /></h2>
+          </div>
+          <!-- Flat owner details -->
+          <div class="owner_details">
+            <h2>Flat owner name : <span data-owner-name></span></h2>
+            <h2>Flat number : <span data-flat-number></span></h2>
+            <h3>Bill Date : <span data-current-date></span></h3>
+          </div>
         </div>
+        <!-- 2nd part -->
+        <!-- Bill details -->
+        <div class="form">
+          <div class="">
+            <table class="">
+              <thead class="">
+                <tr>
+                  <th scope="col" class="">NO</th>
+                  <th scope="col" class="">DESCRIPTION</th>
+                  <th scope="col" class="">TOTAL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <td class="">1</td>
+                  <td class="">House Bill</td>
+                  <td class="">
+                    <p data-houseBill-amount class="house_bill">200</p>
+                  </td>
+                </tr>
+                <tr class="">
+                  <td class="">1</td>
+                  <td class="">Service Charge</td>
+                  <td class="">
+                    <p data-serviceBill-amount class="service-charge">200</p>
+                  </td>
+                </tr>
+                <tr class="">
+                  <td class="">2</td>
+                  <td class="">Water Bill</td>
+                  <td class="">
+                    <p data-waterBill-amount class="water-bill">200</p>
+                  </td>
+                </tr>
+                <tr class="">
+                  <td class="">3</td>
+                  <td class="">Gas Bill</td>
+                  <td class="">
+                    <input
+                      type="text"
+                      name=""
+                      value="$"
+                      id="gas_bill"
+                      class="gas-bill"
+                    />
+                  </td>
+                </tr>
+                <tr class="">
+                  <td class="">4</td>
+                  <td class="">Electricity Bill</td>
+                  <td class="">
+                    <input
+                      type="text"
+                      name=""
+                      value="$"
+                      id="electricity_bill"
+                      class="electricity-bill"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Intotal Bill -->
+          <div class="bill_result_area">
+            <div class="">
+              <p class="">TOTAL BILL</p>
+            </div>
+            <div class="">
+              <p data-total-amount class="total-bill">0</p>
+            </div>
+          </div>
+          <button>Pay Now</button>
+        </div>
+        <button>Download PDF</button>
+      </div>
     </div>
-
-
-</body>
-
+  </body>
 </html>
