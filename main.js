@@ -11,13 +11,34 @@ var waterBill = document.querySelector("[data-waterBill-amount]");
 var totalAmount = document.querySelector("[data-total-amount]");
 var gasBill = document.getElementById("gas_bill");
 var electricityBill = document.getElementById("electricity_bill");
+var form = document.querySelector(".form");
 
-var total = houseBill + serviceBill;
-console.log(total);
+// console.log(form);
 
-gasBill.addEventListener("blur", function () {
-  gasBill.innerText = this.value;
-});
+// gasBill.addEventListener("input", calculate);
+// electricityBill.addEventListener("input", calculate);
+form.addEventListener("input", calculate);
+console.log(form);
+
+function calculate(e) {
+  console.log(e);
+  var house = parseInt(houseBill.dataset.housebillAmount);
+  var service = parseInt(serviceBill.dataset.servicebillAmount);
+  var water = parseInt(waterBill.dataset.waterbillAmount);
+
+  var gas = gasBill.value ? parseInt(gasBill.value) : 0;
+
+  var electricity = electricityBill.value ? parseInt(electricityBill.value) : 0;
+
+  var total = house + service + water + gas + electricity;
+  totalAmount.innerText = "$" + total;
+}
+
+
+
+
+
+
 
 ownerName.addEventListener("keyup", function () {
   ownerNameTwo.innerText = this.value;
