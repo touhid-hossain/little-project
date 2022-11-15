@@ -20,14 +20,20 @@
         <!-- Choose Name and flat No -->
         <div class="choice_area">
           <h1>Select Your Name and flat Number</h1>
-          <h2>
-            Your Name :<input type="text" name="" value="" id="owner_name" />
-          </h2>
-          <h2>
-            Your Flat Number :<input type="text" name="" value="" id="flat_number" />
-          </h2>
-          <h2>Choose your bill date : <input type="date" name="" id="" /></h2>
+          <!-- Name selector -->
+          <form >
+          <Span> Your Name :</Span><input list="owner_name" data-select-name name="">
+            <datalist id="owner_name"></datalist>
+            <input type="submit" value="Submit">
+          </form>
+          <!-- Flat-No Selector -->
+          <form >
+            <Span> Your Flat Number :</Span><input list="flat_number" data-select-flatNumber name="">
+              <datalist id="flat_number"></datalist>
+            </form>
+          <h2>Choose your bill date : <input type="date" name="" data-select-date id="date" /></h2>
         </div>
+        
         <!-- Flat owner details -->
         <div class="owner_details">
           <h2>Flat owner name : <span data-owner-name></span></h2>
@@ -52,21 +58,21 @@
                 <td class="">1</td>
                 <td class="">House Bill</td>
                 <td class="">
-                  <p data-houseBill-amount="200" class="house_bill">$200</p>
+                  <p data-houseBill-amount="" class="house_bill">$0</p>
                 </td>
               </tr>
               <tr class="">
                 <td class="">1</td>
                 <td class="">Service Charge</td>
                 <td class="">
-                  <p data-serviceBill-amount="200" class="service-charge">$200</p>
+                  <p data-serviceBill-amount="" value="" class="service-charge">$0</p>
                 </td>
               </tr>
               <tr class="">
                 <td class="">2</td>
                 <td class="">Water Bill</td>
                 <td class="">
-                  <p data-waterBill-amount="200" class="water-bill">$200</p>
+                  <p data-waterBill-amount="" class="water-bill">$0</p>
                 </td>
               </tr>
               <tr class="">
@@ -86,13 +92,13 @@
             </tbody>
           </table>
         </div>
-        <!-- Intotal Bill -->
+        <!-- In-total Bill -->
         <div class="bill_result_area">
           <div class="">
             <p class="">TOTAL BILL</p>
           </div>
           <div class="">
-            <p data-total-amount class="total-bill">0</p>
+            <p data-total-amount class="total-bill">$0</p>
           </div>
         </div>
         <button>Pay Now</button>

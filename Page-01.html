@@ -12,13 +12,30 @@
 
 <body>
     <div>
-        <h1>WELCOME TO OUR NIRBAHO PAGE</h1>
-        UserName :<input type="text" name="" id="">
+        <form class="mail_form">
+            <h1>WELCOME TO OUR NIRBAHO PAGE</h1>
+            <div>
+              <label for="name">Your E-Mail :</label> 
+               <input data-mail-input name="email" id="email" placeholder="Enter your email address" class="mail_input" required>
+                <p id="validationMailText" class="valid_text">Whoops, make sure it's your email!</p>
+            </div>
+            <div>
+                <label for="name">Your Password :</label> 
+                <input data-password-input name="password" id="password" placeholder="Enter your password" class="pass_input" required>
+                 <p id="validationPassText" class="">Whoops, make sure it's an Correct Password!</p>
+             </div>
+            <div class="email_btn">
+                <a class="mail_btn" onClick="emailValidate()">Log-In</a>
+            </div>
+        </form>
+
+        <!-- Your Mail :<input type="mail" name="" data-login-input id="">
+        <p id="validationText" class="valid_text">Whoops, make sure it's an email!</p>
         Password :<input type="text" name="" id="">
         <p>Click below to access your profile.</p>
-        <button><a href="Page-02.html">LogIn</a>
+        <button><a href="Page-02.html" id="login">LogIn</a> -->
     </div>
 
-</body>
+</body> 
 
 </html>
